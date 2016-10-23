@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1.DZ_2.zad
+namespace Prva_DZ
 {
     class Program
     {
         static void Main(string[] args)
         {
-            GenericList<double> listOfIntegers = new GenericList<double>();
 
-            listOfIntegers.Add(1.5); // [1]
+            IntegerList listOfIntegers = new IntegerList(1);
+                         
+            listOfIntegers.Add(1); // [1]
             listOfIntegers.Remove(1);
             listOfIntegers.Add(2); // [1 ,2]
             listOfIntegers.Add(3); // [1 ,2 ,3]
@@ -22,6 +23,7 @@ namespace _1.DZ_2.zad
             listOfIntegers.Remove(5);
 
             Console.ReadLine();
+            
         }
-    }
+     }
 }
